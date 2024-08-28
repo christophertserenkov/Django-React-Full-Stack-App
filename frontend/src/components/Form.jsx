@@ -56,6 +56,11 @@ function Form({ route, method }) {
             <button className="form-button" type="submit">
                 {name}
             </button>
+            if (method === 'login') {
+                <p>Don't have an account? <a href="/register">Register</a></p>
+            } else {
+                <p>Already have an account? <a href="/login">Login</a></p>
+            }
         </form>
     );
 }
