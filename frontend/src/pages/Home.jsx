@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import api from '../api';
-import Note from '../components/Note'
-import '../styles/Home.css'
+import Note from '../components/Note';
+import '../styles/Home.css';
 
 function Home() {
     const [notes, setNotes] = useState([]);
@@ -74,6 +74,7 @@ function Home() {
                 ></textarea>
                 <br />
                 <input type="submit" value="Submit"></input>
+                <a href="/logout">Log out</a>
             </form>
         </div>
     );
